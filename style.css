@@ -1,0 +1,115 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Form container */
+.form-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header section */
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Fieldset styling */
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+/* Group styles */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label and input styles */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Checkbox and radio styles */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Multi-checkbox groups */
+.form-group input[type="checkbox"] + label,
+.form-group input[type="radio"] + label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+/* Signature section */
+.signature-line {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.signature-field,
+.date-field {
+  flex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .form-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .signature-line {
+    flex-direction: column;
+  }
+}

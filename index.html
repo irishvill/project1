@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANYAN Web Design - Client Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <header class="form-header">
+                <img src="G:\My Drive\Project\images\logo.jpg" alt="Banyan Web Design Logo" class="logo">
+                <div>
+                    <h1>Irish V.</h1>
+                    <p>PHOTOGRAPHY</p>
+                </div>
+            </header>
+
+            <h2>CLIENT INFORMATION FORM</h2>
+
+            <fieldset>
+                <p><b>Personal Information</b></p>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName">
+                </div>
+                <div class="form-group">
+                    <label for="companyOrganization">Company/Organization (if any):</label>
+                    <input type="text" id="companyOrganization" name="companyOrganization">
+                </div>
+                <div class="form-group">
+                    <label for="positionRole">Position/Role:</label>
+                    <input type="text" id="positionRole" name="positionRole">
+                </div>
+                <div class="form-group">
+                    <label for="emailAddress">Email Address:</label>
+                    <input type="email" id="emailAddress" name="emailAddress">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber">
+                </div>
+                <div class="form-group preferred-contact">
+                    <label>Preferred Method of Contact:</label>
+                    <input type="checkbox" id="emailContact" name="preferredContact" value="Email">
+                    <label for="emailContact">Email</label>
+                    <input type="checkbox" id="phoneContact" name="preferredContact" value="Phone">
+                    <label for="phoneContact">Phone</label>
+                    <input type="checkbox" id="messagingAppContact" name="preferredContact" value="Messaging App">
+                    <label for="messagingAppContact">Messaging App</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <p><b>Project Details</b></p>
+                <div class="form-group">
+                    <label for="projectTitle">Project Name/Title:</label>
+                    <input type="text" id="projectTitle" name="projectTitle">
+                </div>
+                <div class="form-group service-type">
+                    <label>Type of Service Required:</label>
+                    <input type="checkbox" id="webDevelopment" name="serviceType" value="Web Development">
+                    <label for="webDevelopment">Web Development</label>
+                    <input type="checkbox" id="graphicDesign" name="serviceType" value="Graphic Design">
+                    <label for="graphicDesign">Graphic Design</label>
+                    <input type="checkbox" id="branding" name="serviceType" value="Branding">
+                    <label for="branding">Branding</label>
+                    <input type="checkbox" id="marketing" name="serviceType" value="Marketing">
+                    <label for="marketing">Marketing</label>
+                </div>
+                <div class="form-group">
+                    <label for="briefDescription">Brief Description of the Project:</label>
+                    <textarea id="briefDescription" name="briefDescription" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="targetAudience">Target Audience:</label>
+                    <input type="text" id="targetAudience" name="targetAudience">
+                </div>
+                <div class="form-group">
+                    <label for="deadline">Deadline or Timeline:</label>
+                    <input type="text" id="deadline" name="deadline">
+                </div>
+                <div class="form-group budget-range">
+                    <label>Budget Range:</label>
+                    <input type="checkbox" id="below10000" name="budgetRange" value="Below P10,000">
+                    <label for="below10000">Below P10,000</label>
+                    <input type="checkbox" id="p10000-50000" name="budgetRange" value="P10,000-50,000">
+                    <label for="p10000-50000">P10,000-P50,000</label>
+                    <input type="checkbox" id="p50000plus" name="budgetRange" value="P50,000+">
+                    <label for="p50000plus">P50,000+</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <p><b>File & Content Provision</b></p>
+                <div class="form-group">
+                    <label>Will you provide content (text, images, etc.)?</label>
+                    <input type="radio" id="contentYes" name="provideContent" value="Yes">
+                    <label for="contentYes">Yes</label>
+                    <input type="radio" id="contentNo" name="provideContent" value="No">
+                    <label for="contentNo">No</label>
+                    <input type="radio" id="contentPartially" name="provideContent" value="Partially">
+                    <label for="contentPartially">Partially</label>
+                </div>
+                <div class="form-group">
+                    <label>Do you have brand assets (logos, colors, fonts)?</label>
+                    <input type="radio" id="brandAssetsYes" name="brandAssets" value="Yes">
+                    <label for="brandAssetsYes">Yes</label>
+                    <input type="radio" id="brandAssetsNo" name="brandAssets" value="No">
+                    <label for="brandAssetsNo">No</label>
+                    <input type="radio" id="brandAssetsMaybe" name="brandAssets" value="Still in meantime">
+                    <label for="brandAssetsMaybe">Still in meantime</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+               <p><b>Approvals & Follow-ups</b></p>
+                <div class="form-group">
+                    <label for="approvalsSide">Who will approve designs or decisions on your side?</label>
+                    <input type="text" id="approvalsSide" name="approvalsSide">
+                </div>
+                <div class="form-group preferred-updates">
+                    <label>How often do you prefer updates?</label>
+                    <input type="radio" id="updatesDaily" name="preferredUpdates" value="Daily">
+                    <label for="updatesDaily">Daily</label>
+                    <input type="radio" id="updatesWeekly" name="preferredUpdates" value="Weekly">
+                    <label for="updatesWeekly">Weekly</label>
+                    <input type="radio" id="updatesKeyMilestone" name="preferredUpdates" value="At key milestone only">
+                    <label for="updatesKeyMilestone">At key milestone only</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="signature-section">
+                <p><b>Signature (if printed)</b></p>
+                <div class="form-group signature-line">
+                    <label for="clientSignature">Client Signature:</label>
+                    <input type="text" id="clientSignature" name="clientSignature" class="signature-field">
+                    <label for="date">Date:</label>
+                    <input type="text" id="date" name="date" class="date-field">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
